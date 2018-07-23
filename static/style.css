@@ -1,0 +1,39 @@
+legend {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 3px 6px;
+}
+.center {
+
+	text-align: center;
+
+}
+.padded {
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+input,
+label {
+    width: 43%;
+}
+
+input {
+    margin: 1rem 0;
+}
+
+label {
+    display: inline-block;
+    font-size: .8rem;
+}
+
+footer {
+	font-size: 8px;
+}
+

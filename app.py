@@ -21,8 +21,8 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/getdelay', methods=['POST','GET'])
-def get_delay():
+@app.route('/prediction', methods=['POST','GET'])
+def prediction():
     if request.method=='POST':
         result=request.form
 

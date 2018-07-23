@@ -1,41 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title>PTA Chalculator</title>
+    <head>
+        <title>PTA Chalculator</title>
+        <link rel="stylesheet" href='/static/style.css' />
+        <link rel="icon" href="/static/icon.png" />
+    </head>
 <body>
 
 
-<fieldset>
-	<legend>PTA Calculator</legend>
-	<h3> PTA Prediction: {{ prediction }} </h3>
+<fieldset class="padded">
+    <legend class="center"><img src='/static/pta_logo.png' /></legend>
+	<h3 class='center'> PTA Prediction: {{ prediction }} </h3>
 
 </fieldset>
+<footer class='padded center'>Logo created with logomakr.com</footer>
+
 
 </body>
-
-<style>
-legend {
-    background-color: #000;
-    color: #fff;
-    padding: 3px 6px;
-}
-
-.output {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    width: 43%;
-}
-
-input {
-    margin: 1rem 0;
-}
-
-label {
-    display: inline-block;
-    font-size: .8rem;
-}
-
-</style>
 </html>

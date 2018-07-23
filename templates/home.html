@@ -1,47 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>PTA Calculator</title>
+	<head>
+		<title>PTA Calculator</title>
+		<link rel="stylesheet" href='/static/style.css' />
+		<link rel="icon" href="/static/icon.png" />
+	</head>
 <body>
 
-<fieldset>
-	<legend>PTA Calculator</legend>
-	<form action = "/getdelay" method="POST">
-	<p> Duration of symptoms (days): <input type="number" id="duration" name="duration" required/> </p>
-	<p> Otalgia? <input type="checkbox" id="otalgia" name="otalgia"/> </p>
+<fieldset class='padded'>
+	<legend class="center"><img src='/static/pta_logo.png' /></legend>
+	<p>This form allows you to calculate the likelihood of peritonsillar abscess for a given patient based on a variety of clinical characteristics as based on Wilson et al 2018. Input the data requested below and likelihood of PTA will be calculated.  Please note, that this is to be used as an adjunct to your clinical decision making, and you should leverage all of your medical expertise and knowledge of the individual patient before deciding on a given diagnosis and treatment plan.</p>
+	<form action = "/prediction" method="POST">
+	<p> Duration of symptoms (days):</br /><input type="number" id="duration" name="duration" required/> </p>
+	<p > Otalgia? <input type="checkbox" id="otalgia" name="otalgia"/> </p>
 	<p> Trismus? <input type="checkbox" id="trismus" name="trismus"/> </p>
 	<p> Symptoms Worsening? <input type="checkbox" id="worsening" name="worsening"/> </p>
 	<p> Neck Pain? <input type="checkbox" id="neck_pain" name="neck_pain"/> </p>
 	<p> Has received previous treatment? <input type="checkbox" id="previous" name="previous"/> </p>
-	<p> <input type ="submit" value="submit" /> </p>
+	<p class='center'> <input type ="submit" value="Submit" /> </p>
 	</form>
 </fieldset>
+<footer class='padded center'>Logo created with logomakr.com</footer>
+
 </body>
-
-<style>
-legend {
-    background-color: #000;
-    color: #fff;
-    padding: 3px 6px;
-}
-
-.output {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-    width: 43%;
-}
-
-input {
-    margin: 1rem 0;
-}
-
-label {
-    display: inline-block;
-    font-size: .8rem;
-}
-
-</style>
 
 </html>
