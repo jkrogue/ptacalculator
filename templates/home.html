@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>PTA Calculator</title>
+<body>
+
+<fieldset>
+	<legend>PTA Calculator</legend>
+	<form action = "/getdelay" method="POST">
+	<p> Duration of symptoms (days): <input type="number" id="duration" name="duration" required/> </p>
+	<p> Otalgia? <input type="checkbox" id="otalgia" name="otalgia"/> </p>
+	<p> Trismus? <input type="checkbox" id="trismus" name="trismus"/> </p>
+	<p> Symptoms Worsening? <input type="checkbox" id="worsening" name="worsening"/> </p>
+	<p> Neck Pain? <input type="checkbox" id="neck_pain" name="neck_pain"/> </p>
+	<p> Has received previous treatment? <input type="checkbox" id="previous" name="previous"/> </p>
+	<p> <input type ="submit" value="submit" /> </p>
+	</form>
+</fieldset>
+</body>
+
+<style>
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    width: 43%;
+}
+
+input {
+    margin: 1rem 0;
+}
+
+label {
+    display: inline-block;
+    font-size: .8rem;
+}
+
+</style>
+
+</html>
