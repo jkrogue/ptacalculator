@@ -10,7 +10,11 @@
 
 <fieldset class="padded">
     <legend class="center"><img src='/static/pta_logo.png' /></legend>
-	<h3 class='center'> PTA Prediction: {{ prediction }} </h3>
+	<h3 class='center'> PTA Prediction:
+		{% if prediction == 'Positive' %} High likelihood of abscess
+		{% else %} Low likelihood of abscess
+		{% endif %}
+	</h3>
 
 </fieldset>
 <footer class='padded center'>Logo created with logomakr.com</footer>
