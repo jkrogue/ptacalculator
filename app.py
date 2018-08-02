@@ -34,6 +34,7 @@ def prediction():
         
         model = joblib.load(pkl_name)
         prediction = model.predict([inputs])
+        proba = model.predict_proba([inputs])[0,1]
         
         return render_template('prediction.html', prediction=pred_dict[prediction[0]])
 
