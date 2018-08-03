@@ -10,7 +10,7 @@
 <fieldset class='padded'>
 	<legend class="center"><img src='/static/pta_logo.png' /></legend>
 	<p>This website allows you to calculate the likelihood of peritonsillar abscess for a given patient based on the output of a machine learning algorithm developed at the University of Michigan by Wilson et al. 2018. The prediction is based on data collected by over a 1000 patients with clinical suspicion of peritonsillar abscess. Their algorithm demonstrated accuracy of 73% (higher than reported accuracies of ENT specialists). It uses answers to the following questions to predict the likelihood of successful needle aspiration of a peritonsillar abscess. Input the data requested below and likelihood of PTA will be calculated.</p>
-	<p> Please note, that this is to be used only as an adjunct to your clinical decision making. You should use all of your medical expertise and knowledge of the patient before deciding on a particular diagnosis and treatment plan.</p>
+	<p> Please note that this is to be used only as an adjunct to your clinical decision making. You should use all of your medical expertise and knowledge of the patient before deciding on a particular diagnosis and treatment plan.</p>
 	<form action = "/prediction" method="POST">
 	<p> Duration of symptoms (days):</br /><input type="number" id="duration" name="duration" required/> </p>
 	<p> Otalgia? <input type="checkbox" id="otalgia" name="otalgia"/> </p>
